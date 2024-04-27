@@ -9,11 +9,12 @@ const fileName = 'target.txt';
 
 // async
 fs.readFile(fileName, (err, data) => {
-    if (err) {
-        console.log(error);
-    }
+    if (err) handleError(err);
 
-    console.log(data.toString());
+    handleData(data);
 });
+
+const handleError = (err) => console.log(err);
+const handleData = (data) => console.log(data.toString());
 
 console.log('node.js is asynchronous, single threaded, non blocking event loop');
