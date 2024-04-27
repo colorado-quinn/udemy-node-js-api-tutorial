@@ -1,12 +1,12 @@
 // to execute in terminal:  node app.js
 const { sum } = require('./helpers');
-const http = require('http');
+const { createServer } = require('http');
 
 //console.log('hello from node js');
 //console.log('process: ', process);
 
-const server = http.createServer((req, res) => {
-    res.end('hello world from node js :D');
+const server = createServer((req, res) => {
+    res.end('hello world from node js server :D');
 });
 
 server.listen(3000);
