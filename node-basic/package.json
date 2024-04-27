@@ -1,0 +1,19 @@
+{
+    "name": "basic",
+    "version": "1.0.0",
+    "description": "node js api tutorial",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev-server": "nodemon server.js"
+    },
+    "author": "colorado-quinn",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "nodemon": "^3.1.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5"
+    }
+}
