@@ -1,7 +1,12 @@
 const { useApp } = require('./useApp');
-const postRoutesRouter = require('../routes/post');
+const express = require('express');
+const postController = require('../controllers/post');
 
 exports.useRouting = () => {
+    const router = express.Router();
+    router.get('/', postController.getPosts);
+    router.post('/post', postController.createPost);
+
     const app = useApp();
-    app.use('/', postRoutesRouter);
+    app.use('/', router);
 };
