@@ -9,7 +9,7 @@ exports.getPosts = (req, res) => {
 };
 
 exports.createPost = async (req, res) => {
-    console.log('Creating post: ', req.body);
+    //console.log('Creating post: ', req.body);
 
     const post = new Post(req.body);
     post.save()

@@ -2,7 +2,7 @@ const { body, validationResult } = require('express-validator');
 
 const postValidation = () => {
     return async (req, res, next) => {
-        console.log('post validation!');
+        //console.log('post validation!');
 
         // title
         await body('title').trim().notEmpty().withMessage('A title is required.').run(req);

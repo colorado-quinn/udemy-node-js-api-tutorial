@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
 const demoMiddleware = (req, res, next) => {
-    console.log('middleware applied!');
+    //console.log('middleware applied!');
     next();
 };
 
